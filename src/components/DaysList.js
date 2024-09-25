@@ -16,18 +16,18 @@ const DaysList = ({
   value,
   monthChangeDirection,
   onSlideChange,
-  disabledDays,
-  onDisabledDayError,
+  disabledDays = [],
+  onDisabledDayError = () => {},
   minimumDate,
   maximumDate,
-  onChange,
+  onChange = () => {},
   locale,
-  calendarTodayClassName,
-  calendarSelectedDayClassName,
-  calendarRangeStartClassName,
-  calendarRangeEndClassName,
-  calendarRangeBetweenClassName,
-  shouldHighlightWeekends,
+  calendarTodayClassName = '',
+  calendarSelectedDayClassName = '',
+  calendarRangeStartClassName = '',
+  calendarRangeEndClassName = '',
+  calendarRangeBetweenClassName = '',
+  shouldHighlightWeekends = false,
   isQuickSelectorOpen,
   customDaysClassName,
 }) => {
@@ -274,18 +274,6 @@ const DaysList = ({
       </div>
     </div>
   );
-};
-
-DaysList.defaultProps = {
-  onChange: () => {},
-  onDisabledDayError: () => {},
-  disabledDays: [],
-  calendarTodayClassName: '',
-  calendarSelectedDayClassName: '',
-  calendarRangeStartClassName: '',
-  calendarRangeBetweenClassName: '',
-  calendarRangeEndClassName: '',
-  shouldHighlightWeekends: false,
 };
 
 export default DaysList;

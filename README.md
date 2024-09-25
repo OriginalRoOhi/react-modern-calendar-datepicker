@@ -1,4 +1,5 @@
 # react-modern-calendar-datepicker
+
 [![Build Status](https://travis-ci.org/Kiarash-Z/react-modern-calendar-datepicker.svg?branch=master)](https://travis-ci.org/Kiarash-Z/react-modern-calendar-datepicker) [![codecov.io](https://codecov.io/github/kiarash-z/react-modern-calendar-datepicker/coverage.svg?branch=master)](https://codecov.io/github/kiarash-z/react-modern-calendar-datepicker?branch=master) ![npm](https://img.shields.io/npm/v/react-modern-calendar-datepicker)
 
 A modern, beautiful, customizable date picker for React.
@@ -8,17 +9,20 @@ A modern, beautiful, customizable date picker for React.
 </a>
 
 ## Installation 🚀
+
 ```bash
-npm i @hassanmojab/react-modern-calendar-datepicker
+npm i @roohi/react-modern-calendar-datepicker
 
 # or if you prefer Yarn:
-yarn add @hassanmojab/react-modern-calendar-datepicker
+yarn add @roohi/react-modern-calendar-datepicker
 ```
 
 ## Documentation 📄
+
 You can find documentation on [the website.](https://kiarash-z.github.io/react-modern-calendar-datepicker/)
 
 The documentation is divided into several sections:
+
 - [Getting Started](https://kiarash-z.github.io/react-modern-calendar-datepicker/docs/getting-started)
 - [Core Concepts](https://kiarash-z.github.io/react-modern-calendar-datepicker/docs/core-concepts)
 - [Default Values](https://kiarash-z.github.io/react-modern-calendar-datepicker/docs/default-values)
@@ -49,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

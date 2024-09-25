@@ -7,27 +7,27 @@ import { useLocaleUtils, useLocaleLanguage } from './shared/hooks';
 import { Header, MonthSelector, YearSelector, DaysList } from './components';
 
 const Calendar = ({
-  value,
+  value = null,
   onChange,
   onDisabledDayError,
-  calendarClassName,
+  calendarClassName = '',
   calendarTodayClassName,
   calendarSelectedDayClassName,
   calendarRangeStartClassName,
   calendarRangeBetweenClassName,
   calendarRangeEndClassName,
   disabledDays,
-  colorPrimary,
-  colorPrimaryLight,
-  slideAnimationDuration,
-  minimumDate,
-  maximumDate,
+  colorPrimary = '#0eca2d',
+  colorPrimaryLight = '#cff4d5',
+  slideAnimationDuration = '0.4s',
+  minimumDate = null,
+  maximumDate = null,
   selectorStartingYear,
   selectorEndingYear,
-  locale,
+  locale = 'en',
   shouldHighlightWeekends,
-  renderFooter,
-  customDaysClassName,
+  renderFooter = () => null,
+  customDaysClassName = [],
 }) => {
   const calendarElement = useRef(null);
   const [mainState, setMainState] = useState({
@@ -185,19 +185,6 @@ const Calendar = ({
       <div className="Calendar__footer">{renderFooter()}</div>
     </div>
   );
-};
-
-Calendar.defaultProps = {
-  minimumDate: null,
-  maximumDate: null,
-  colorPrimary: '#0eca2d',
-  colorPrimaryLight: '#cff4d5',
-  slideAnimationDuration: '0.4s',
-  calendarClassName: '',
-  locale: 'en',
-  value: null,
-  renderFooter: () => null,
-  customDaysClassName: [],
 };
 
 export { Calendar };
